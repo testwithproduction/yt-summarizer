@@ -1,0 +1,51 @@
+# Summary
+
+The technical talk from a GM representative at a Databricks community event revolves around GM's strategic transformation towards becoming a software-centric company to achieve its mission of zero crashes, zero emissions, and zero congestion. Here are the key points highlighted from the talk:
+
+1. **Mission and Personal Commitment**:
+   - GM's mission is deeply personal to the speaker, emphasizing the urgency of achieving zero crashes, emissions, and congestion.
+   
+2. **Strategic Importance**:
+   - Customers increasingly demand vehicles that prioritize safety, security, and comfort.
+   - The company that excels in these areas will dominate the future market, and GM aspires to be that company.
+
+3. **Need for Transformation**:
+   - GM, a 115-year-old hardware-centric company, needs to transform into a software company to stay competitive.
+   - The motivators for this transformation are data efficiency and the adoption of AI and ML technologies.
+
+4. **Initial Challenges**:
+   - GM had a significant amount of data and a robust on-prem infrastructure.
+   - A time study revealed inefficiencies, with 200 person-years spent annually on data hunting and gathering.
+   - The necessity to harness AI and ML to avoid competitive disadvantages.
+
+5. **Cultural and Operational Shifts**:
+   - GM decided to embrace the cloud, emphasizing a safety-first, build-first mindset.
+   - The aim was to create an insight factory utilizing cloud patterns and Databricks.
+
+6. **Adoption of Databricks**:
+   - Databricks was chosen to unify data sources, enhance collaboration, and establish a single source of truth.
+   - The goals were to move away from fragmented governance to unified governance and to integrate AI and ML into GM's core operations.
+
+7. **Implementation and Results**:
+   - The insight factory developed a React UI for controlling data and refining insights under GM's strategic IP.
+   - The transformation was achieved in record time (about nine months).
+   - Unity Catalog and open ecosystems like Immuta and Atlin were instrumental in streamlining processes and achieving end-to-end visibility.
+
+8. **Lessons Learned**:
+   - The complexity of the system required substantial technical talent.
+   - Tools like serverless and lake house apps eased the scaling process.
+   - Existing smart talent at GM needed pathways to integrate their isolated AI/ML efforts into production, facilitated by tools like MLflow.
+
+9. **Case Study - Customer Safety**:
+   - A critical application was developed for customer safety, integrating data from 15 sources to rapidly provide insights.
+   - The initiative focused on real-time data alignment and reducing the time to actionable insights.
+
+10. **Future Vision**:
+    - GM is poised to layer in next-generation AI by year two, aiming to further incorporate AI into its operations.
+    - The company is seeking talented individuals to join in their mission, emphasizing the vast opportunities to contribute and innovate.
+
+The talk concludes with an invitation to the audience to consider joining GM to help achieve their transformational goals and mission.
+
+# Transcription
+
+ Hey Databricks community, good to be here with you and Databricks thanks for giving us a few minutes to share our story. The GM mission, zero crashes, zero missions, zero congestion. To some people words on a slide to others like me deeply personally you see I know a six year old that was killed in a car crash. So this future cannot come fast enough for me. But is it strategic? Yes. Customers increasingly want a vehicle that thinks about their safety, security and comfort. So the company that figures these things out will increasingly write the rule book of the future and GM wants to be that firm. But there's a trick to get there. This 115 year old company that is a storied legacy and hardware must become a software company. No easy trick. So where did we start? GM has a ton of data. That's not the problem. We had a beautiful on-prem infrastructure. Why change? Well two reasons. Number one was data efficiency. GM did a time in motion study and we determined that every year we spent 200 person years in the hunting and gathering of data. Now don't quote me on that. We've made a lot of progress since that study was run but you get the order of magnitude of the problem. But more importantly in the last few years the world changed and GM understood that if we didn't have AI and ML in our arsenal we could find ourselves at a competitive disadvantage. So we needed to transform and about 15 months ago GM decided if we're going to change the future we must change ourselves today. So how do we go about doing it? Well we were going to be all about the cloud which meant that we needed to shift our culture safety first, safety first, safety first. That was immutable rule but underneath that it was all build our mindset. We were going to get in there, we were going to build things and we were going to learn and grow and that was going to be how we were going to approach it. We would find patterns that worked in the cloud and we would build an insight factory. That would be the best in the West Coast approach, the best of the cloud and we'd print that out into a blueprint that we would share with others at GM. And to do that we decided we would, sorry I'm catching up, build it all on Databricks. Why? Because we had totally aligned interests. We needed to move from data and solution silos to single sources of truth with rapid collaboration. We needed to move away from fragmented governance into simple unified governance and we felt if we did those two things extremely well that we'd be able to go from pockets of limited AI and ML execution in GM has some wonderful things to really building AI and ML into the DNA of GM. If we could do that maybe we would change GM forever. So this is what the insight factory looks like today. I'm super proud of the work of the team. It's an end to end system with a React UI that allows us to control all of the data. We define the quality and the medallion process so we can see every hop and no hop missed. We control the strategic IP that goes in there because we should own it. That's our competitive advantage. We can refine quickly and present insights in a beautiful GM-branded React interface. But I have to admit building this isn't easy. A system like this is super complex. It's dynamic. Everything is changing every day and on top of that you make mistakes. So we pushed ourselves to our limit and sometimes beyond but we built it off of scar tissue and grit and it took a village. But the good news is we got here in a record time so imagine going from almost nowhere on this to having this entire system in maybe nine months. Here's some good news for us to share. Unity Catalog basically worked out of the box for us, got us in the game and the open ecosystem allowed us to have a low friction way to go after that hunt and gather stat I talked about before using Immuta for policy compression and Atlin for end to end visibility from the cloud all the way back to our on-prem. Two lessons learned along the way. Using a node in the mesh takes a lot of technical talent. So when things like serverless and lake house apps come along it really helps us with our ability to scale. Databricks community, please keep those coming. They're really being put to good use. But the other thing that we learned is GM has a lot of very smart and talented people already. They've built AI and ML but it's in these little pockets and in these silos. So something like ML flow that gives them a path to production. You can feel GM's data intelligence rising already. On top of that everything that's happening with Gen AI we're going to layer in next year and we feel like with that we can go toe to toe with anybody in the world. So we opened the factory and we just needed the killer app. So about two weeks after the factory opened we got a knock on the door from a guardian angel. I don't think that's her actual title at the firm but one of the nicest people in the world and her job is customer safety. And a General Motors that's a big deal. Everything is more important. And her job is to know the health of all the cars on the road which ones might need a little bit of attention or service. She was experiencing this exact problem. Insights that she should get in an afternoon might be taking her days or weeks or even a month. She was having to go to all these silos and do complex joints. Now imagine her world. Tens of millions of cars on the road, different combinations of sensors and all these new cars are coming in and they're more intelligent, more sensors. So this is near a max complexity problem and there's only one way out of it and it's going to be AI and ML. So of course we could help. We welcome turn to the factory. 15 underlying sources. We plug that into the cloud, rapidly expose the data in Unity Catalog and GM was sketching their heads. The meeting that we went into where we said we had brought this all to life in the cloud they were like I thought we were going to have a follow up PowerPoint meeting or a discussion to align on the next steps. We said no we're just building. We started to hammer out the first silver table and it was terrible. Nobody liked it. Then we had another meeting. We said listen we're going to pivot and rapidly get this better. And they said this one has too many warts but then gradually because we all had the same mission in mind we were seeing the same data we started to come into alignment. And that's the way GM is going to get to this future. Smart people looking at the same data and getting into flow state rapidly is the path out of this. To me that's a great start. It's year one at GM. We got momentum. The company got oriented. We put thousands of people into data bricks. We're reducing the time to insight and we're finding ways to contribute value. In year two we're going to layer on AI and perhaps perhaps take another step at GM towards our mission of zero crashes. So if you're a person that loves a good challenge we have the mission and the data and now the tech what we need are people that are willing to change the world. Please take a look. We'd love for you to join us at GM. Thank you. Enjoy the rest of your conference.
