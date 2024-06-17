@@ -3,3 +3,5 @@ pytube
 openai
 openai-whisper
 python-dotenv
+pytorch
+pytorch-cuda
