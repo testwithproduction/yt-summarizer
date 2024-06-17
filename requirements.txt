@@ -1,0 +1,5 @@
+yt-dlp
+pytube
+openai
+openai-whisper
+python-dotenv
